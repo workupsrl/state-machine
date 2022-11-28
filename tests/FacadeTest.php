@@ -1,8 +1,8 @@
 <?php
 
-namespace Sebdesign\SM\Test;
+namespace Workup\StateMachine\Test;
 
-use Sebdesign\SM\Facade;
+use Workup\StateMachine\Facade;
 
 class FacadeTest extends TestCase
 {

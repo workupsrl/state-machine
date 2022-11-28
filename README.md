@@ -1,48 +1,15 @@
 # Winzou State Machine service provider for Laravel
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/sebdesign/laravel-state-machine.svg?style=flat-square)](https://packagist.org/packages/sebdesign/laravel-state-machine)
-[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![Build Status](https://img.shields.io/github/workflow/status/sebdesign/laravel-state-machine/Tests/master?style=flat-square)](https://github.com/sebdesign/laravel-state-machine/actions)
-[![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/quality/g/sebdesign/laravel-state-machine/master?style=flat-square)](https://scrutinizer-ci.com/g/sebdesign/laravel-state-machine/?branch=master)
-[![Code Coverage](https://img.shields.io/scrutinizer/coverage/g/sebdesign/laravel-state-machine/master?style=flat-square)](https://scrutinizer-ci.com/g/sebdesign/laravel-state-machine/?branch=master)
-[![StyleCI](https://styleci.io/repos/78893356/shield?style=flat-square)](https://styleci.io/repos/78893356)
-
 This is a Laravel service provider for [winzou/state-machine](https://github.com/winzou/state-machine). It provides dependency injection for the `StateMachineFactory`. You can also use Laravel's service container to resolve class methods for the callbacks. A facade is also available for convenience.
 
 ## Installation
 
-You can install the package via composer. This package requires Laravel 7.0 or higher.
-
-For previous Laravel versions, please check the [compatibility table](#versions).
+You can install the package via composer.
 
 Then require the package using the command-line interface:
 
 ```bash
-composer require sebdesign/laravel-state-machine
-```
-
-### Versions
-
-If you need to install this package in older Laravel installations, use the table below to find a compatible version.
-
-| Package | Laravel | PHP |
-| :--- | :--- | :--- |
-| **^3.0** | `^7.0 - ^9.0` | <code>^7.2.5</code> |
-| **^2.0** | `5.5.* - ^6.0` | <code>^7.0</code> |
-| **^1.0** | `5.1.* - 5.8.*` | <code>^5.5.9 &#124; ^7.0</code> |
-
-Since version 5.5, Laravel uses package auto-discovery, so you don't need to manually add the ServiceProvider and the facade. If you don't use auto-discovery or you are using an older version, add the service provider and the facade in config/app.php.
-
-``` php
-<?php
-
-'providers' => [
-    Sebdesign\SM\ServiceProvider::class,
-],
-
-'aliases' => [
-    'StateMachine' => Sebdesign\SM\Facade::class,
-],
+composer require workup/state-machine
 ```
 
 ## Configuration
@@ -50,7 +17,7 @@ Since version 5.5, Laravel uses package auto-discovery, so you don't need to man
 Publish the config file in `config/state-machine.php`.
 
 ``` bash
-php artisan vendor:publish --provider="Sebdesign\SM\ServiceProvider"
+php artisan vendor:publish --provider="Workup\SM\ServiceProvider"
 ```
 
 Please see the documentation of the [StateMachineBundle](https://github.com/winzou/StateMachineBundle) for all the available options.
@@ -210,7 +177,7 @@ When checking if a transition can be applied, the `SM\Event\SMEvents::TEST_TRANS
 
 Before and after a transition is being applied, the `SM\Event\SMEvents::PRE_TRANSITION` and `SM\Event\SMEvents::POST_TRANSITION` events are fired respectively.
 
-All the events receive a `Sebdesign\SM\Event\TransitionEvent` instance.
+All the events receive a `Workup\SM\Event\TransitionEvent` instance.
 
 If you wish to listen to all the events with the same listener, you can use the `winzou.state_machine.*` wildcard parameter.
 
@@ -245,7 +212,7 @@ protected $listen = [
 ### Context
 
 You can also pass additional data as an array when checking or applying transitions.
-This array will be passed to the `Sebdesign\SM\Event\TransitionEvent`.
+This array will be passed to the `Workup\SM\Event\TransitionEvent`.
 You can access the array using `$event->getContext()` in your event listeners or callbacks.
 
 Example using an event listener:

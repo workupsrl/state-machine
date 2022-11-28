@@ -1,13 +1,13 @@
 <?php
 
-namespace Sebdesign\SM\Test;
+namespace Workup\StateMachine\Test;
 
-use Sebdesign\SM\Callback\ContainerAwareCallback;
-use Sebdesign\SM\Callback\ContainerAwareCallbackFactory;
-use Sebdesign\SM\Commands\Debug;
-use Sebdesign\SM\Factory\Factory;
-use Sebdesign\SM\ServiceProvider;
-use Sebdesign\SM\StateMachine\StateMachine;
+use Workup\StateMachine\Callback\ContainerAwareCallback;
+use Workup\StateMachine\Callback\ContainerAwareCallbackFactory;
+use Workup\StateMachine\Commands\Debug;
+use Workup\StateMachine\Factory\Factory;
+use Workup\StateMachine\ServiceProvider;
+use Workup\StateMachine\StateMachine\StateMachine;
 use SM\Callback\CascadeTransitionCallback;
 use SM\Factory\FactoryInterface;
 use SM\StateMachine\StateMachineInterface;

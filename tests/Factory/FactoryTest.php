@@ -1,12 +1,12 @@
 <?php
 
-namespace Sebdesign\SM\Test\Factory;
+namespace Workup\StateMachine\Test\Factory;
 
 use ReflectionObject;
-use Sebdesign\SM\Factory\Factory;
-use Sebdesign\SM\StateMachine\StateMachine;
-use Sebdesign\SM\Test\Article;
-use Sebdesign\SM\Test\TestCase;
+use Workup\StateMachine\Factory\Factory;
+use Workup\StateMachine\StateMachine\StateMachine;
+use Workup\StateMachine\Test\Article;
+use Workup\StateMachine\Test\TestCase;
 use SM\SMException;
 use SM\StateMachine\StateMachine as BaseStateMachine;
 

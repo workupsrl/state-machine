@@ -1,6 +1,6 @@
 <?php
 
-namespace Sebdesign\SM;
+namespace Workup\StateMachine;
 
 use Illuminate\Support\Facades\Facade as BaseFacade;
 

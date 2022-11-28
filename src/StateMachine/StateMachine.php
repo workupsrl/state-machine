@@ -1,10 +1,10 @@
 <?php
 
-namespace Sebdesign\SM\StateMachine;
+namespace Workup\StateMachine\StateMachine;
 
-use Sebdesign\SM\Event\TransitionEvent;
-use Sebdesign\SM\Metadata\MetadataStore;
-use Sebdesign\SM\Metadata\MetadataStoreInterface;
+use Workup\StateMachine\Event\TransitionEvent;
+use Workup\StateMachine\Metadata\MetadataStore;
+use Workup\StateMachine\Metadata\MetadataStoreInterface;
 use SM\Callback\CallbackFactoryInterface;
 use SM\Event\SMEvents;
 use SM\SMException;
@@ -15,14 +15,14 @@ use Symfony\Component\PropertyAccess\PropertyAccessor;
 class StateMachine extends BaseStateMachine
 {
     /**
-     * @var \Sebdesign\SM\Metadata\MetadataStoreInterface
+     * @var MetadataStoreInterface
      */
     protected $metadataStore;
 
     /**
      * {@inheritdoc}
      *
-     * @param  \Sebdesign\SM\Metadata\MetadataStoreInterface|null  $metadataStore
+     * @param MetadataStoreInterface|null  $metadataStore
      */
     public function __construct(
         $object,
@@ -155,7 +155,7 @@ class StateMachine extends BaseStateMachine
      * @param  string|null  $subject
      * @param  string|null  $key
      * @param  mixed  $default
-     * @return \Sebdesign\SM\Metadata\MetadataStoreInterface
+     * @return MetadataStoreInterface
      */
     public function metadata($type = null, $subject = null, $key = null, $default = null)
     {

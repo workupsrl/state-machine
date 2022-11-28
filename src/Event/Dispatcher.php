@@ -1,6 +1,6 @@
 <?php
 
-namespace Sebdesign\SM\Event;
+namespace Workup\StateMachine\Event;
 
 use Illuminate\Contracts\Events\Dispatcher as DispatcherContract;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;

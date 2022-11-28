@@ -1,9 +1,9 @@
 <?php
 
-namespace Sebdesign\SM\Test\Metadata;
+namespace Workup\StateMachine\Test\Metadata;
 
-use Sebdesign\SM\Metadata\MetadataStore;
-use Sebdesign\SM\Test\TestCase;
+use Workup\StateMachine\Metadata\MetadataStore;
+use Workup\StateMachine\Test\TestCase;
 use SM\SMException;
 
 class MetadataStoreTest extends TestCase

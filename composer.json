@@ -1,5 +1,5 @@
 {
-    "name": "sebdesign/laravel-state-machine",
+    "name": "workup/state-machine",
     "description": "Winzou State Machine service provider for Laravel",
     "keywords": [
         "laravel",
@@ -7,7 +7,7 @@
         "event",
         "statemachine"
     ],
-    "homepage": "https://github.com/sebdesign/laravel-state-machine",
+    "homepage": "https://github.com/workupsrl/state-machine",
     "license": "MIT",
     "authors": [
         {
@@ -30,12 +30,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Sebdesign\\SM\\": "src"
+            "Workup\\StateMachine\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Sebdesign\\SM\\Test\\": "tests"
+            "Workup\\StateMachine\\Test\\": "tests"
         }
     },
     "scripts": {
@@ -49,10 +49,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Sebdesign\\SM\\ServiceProvider"
+                "Workup\\StateMachine\\ServiceProvider"
             ],
             "aliases": {
-                "StateMachine": "Sebdesign\\SM\\Facade"
+                "StateMachine": "Workup\\SM\\Facade"
             }
         }
     }

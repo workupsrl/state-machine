@@ -1,13 +1,13 @@
 <?php
 
-namespace Sebdesign\SM\Test\Callback;
+namespace Workup\StateMachine\Test\Callback;
 
 use Illuminate\Contracts\Auth\Access\Gate as GateContract;
 use Illuminate\Support\Facades\Gate;
-use Sebdesign\SM\Callback\GateCallback;
-use Sebdesign\SM\Test\Article;
-use Sebdesign\SM\Test\ArticlePolicy;
-use Sebdesign\SM\Test\TestCase;
+use Workup\StateMachine\Callback\GateCallback;
+use Workup\StateMachine\Test\Article;
+use Workup\StateMachine\Test\ArticlePolicy;
+use Workup\StateMachine\Test\TestCase;
 use SM\Callback\CallbackInterface;
 use SM\Factory\FactoryInterface;
 

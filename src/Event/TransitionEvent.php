@@ -1,6 +1,6 @@
 <?php
 
-namespace Sebdesign\SM\Event;
+namespace Workup\StateMachine\Event;
 
 use SM\Event\TransitionEvent as BaseTransitionEvent;
 

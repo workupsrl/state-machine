@@ -1,10 +1,10 @@
 <?php
 
-namespace Sebdesign\SM\Test\Commands;
+namespace Workup\StateMachine\Test\Commands;
 
 use Illuminate\Contracts\Console\Kernel;
-use Sebdesign\SM\Test\ConsoleHelpers;
-use Sebdesign\SM\Test\TestCase;
+use Workup\StateMachine\Test\ConsoleHelpers;
+use Workup\StateMachine\Test\TestCase;
 
 class VisualizeTest extends TestCase
 {
@@ -22,7 +22,7 @@ class VisualizeTest extends TestCase
         // Arrange
 
         $config = $this->app['config']->get('state-machine', []);
-        $command = \Mockery::spy('\Sebdesign\SM\Commands\Visualize[choice]', [$config]);
+        $command = \Mockery::spy('\Workup\StateMachine\Commands\Visualize[choice]', [$config]);
 
         $this->app[Kernel::class]->registerCommand($command);
 

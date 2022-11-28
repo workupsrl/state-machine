@@ -1,9 +1,9 @@
 <?php
 
-namespace Sebdesign\SM\Factory;
+namespace Workup\StateMachine\Factory;
 
-use Sebdesign\SM\Metadata\MetadataStoreInterface;
-use Sebdesign\SM\StateMachine\StateMachine;
+use Workup\StateMachine\Metadata\MetadataStoreInterface;
+use Workup\StateMachine\StateMachine\StateMachine;
 use SM\Callback\CallbackFactoryInterface;
 use SM\Factory\Factory as BaseFactory;
 use SM\SMException;
@@ -13,7 +13,7 @@ use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 class Factory extends BaseFactory
 {
     /**
-     * @var \Sebdesign\SM\Metadata\MetadataStoreInterface|null
+     * @var MetadataStoreInterface|null
      */
     protected $metadataStore;
 

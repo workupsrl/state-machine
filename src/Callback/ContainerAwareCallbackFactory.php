@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Sebdesign\SM\Callback;
+namespace Workup\StateMachine\Callback;
 
 use Illuminate\Contracts\Auth\Access\Gate;
 use Illuminate\Contracts\Container\Container as ContainerInterface;

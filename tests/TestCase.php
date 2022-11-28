@@ -1,10 +1,10 @@
 <?php
 
-namespace Sebdesign\SM\Test;
+namespace Workup\StateMachine\Test;
 
 use Orchestra\Testbench\TestCase as BaseTestCase;
-use Sebdesign\SM\Facade;
-use Sebdesign\SM\ServiceProvider;
+use Workup\StateMachine\Facade;
+use Workup\StateMachine\ServiceProvider;
 
 abstract class TestCase extends BaseTestCase
 {

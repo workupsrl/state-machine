@@ -1,13 +1,13 @@
 <?php
 
-namespace Sebdesign\SM\Test\StateMachine;
+namespace Workup\StateMachine\Test\StateMachine;
 
 use Illuminate\Support\Facades\Event;
-use Sebdesign\SM\Event\TransitionEvent;
-use Sebdesign\SM\Metadata\MetadataStore;
-use Sebdesign\SM\StateMachine\StateMachine;
-use Sebdesign\SM\Test\Article;
-use Sebdesign\SM\Test\TestCase;
+use Workup\StateMachine\Event\TransitionEvent;
+use Workup\StateMachine\Metadata\MetadataStore;
+use Workup\StateMachine\StateMachine\StateMachine;
+use Workup\StateMachine\Test\Article;
+use Workup\StateMachine\Test\TestCase;
 use SM\Event\SMEvents;
 use SM\SMException;
 
@@ -43,7 +43,7 @@ class StateMachineTest extends TestCase
         $this->assertFalse($sm->can('publish'));
 
         $this->expectException(SMException::class);
-        $this->expectExceptionMessage('Transition "invalid" does not exist on object "Sebdesign\SM\Test\Article" with graph "default".');
+        $this->expectExceptionMessage('Transition "invalid" does not exist on object "Workup\StateMachine\Test\Article" with graph "default".');
         $sm->can('invalid');
     }
 
@@ -110,11 +110,11 @@ class StateMachineTest extends TestCase
         $this->assertFalse($sm->apply('create', true));
 
         $this->expectException(SMException::class);
-        $this->expectExceptionMessage('Transition "create" cannot be applied on state "pending_review" of object "Sebdesign\SM\Test\Article" with graph "default".');
+        $this->expectExceptionMessage('Transition "create" cannot be applied on state "pending_review" of object "Workup\StateMachine\Test\Article" with graph "default".');
         $this->assertFalse($sm->apply('create'));
 
         $this->expectException(SMException::class);
-        $this->expectExceptionMessage('Transition "invalid" does not exist on state "pending_review" of object "Sebdesign\SM\Test\Article" with graph "default".');
+        $this->expectExceptionMessage('Transition "invalid" does not exist on state "pending_review" of object "Workup\StateMachine\Test\Article" with graph "default".');
         $sm->can('invalid');
     }
 
@@ -207,7 +207,7 @@ class StateMachineTest extends TestCase
         );
 
         $this->expectException(SMException::class);
-        $this->expectExceptionMessage('Cannot set the state to "invalid" to object "Sebdesign\SM\Test\Article" with graph "default" because it is not pre-defined.');
+        $this->expectExceptionMessage('Cannot set the state to "invalid" to object "Workup\StateMachine\Test\Article" with graph "default" because it is not pre-defined.');
 
         // Act
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Sebdesign\SM\Test;
+namespace Workup\StateMachine\Test;
 
 use Illuminate\Contracts\Console\Kernel;
 

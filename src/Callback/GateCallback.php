@@ -1,6 +1,6 @@
 <?php
 
-namespace Sebdesign\SM\Callback;
+namespace Workup\StateMachine\Callback;
 
 use Illuminate\Contracts\Auth\Access\Gate;
 use SM\Callback\Callback;

@@ -1,11 +1,11 @@
 <?php
 
-namespace Sebdesign\SM\Test\Callback;
+namespace Workup\StateMachine\Test\Callback;
 
-use Sebdesign\SM\Callback\ContainerAwareCallback;
-use Sebdesign\SM\Callback\ContainerAwareCallbackFactory;
-use Sebdesign\SM\Callback\GateCallback;
-use Sebdesign\SM\Test\TestCase;
+use Workup\StateMachine\Callback\ContainerAwareCallback;
+use Workup\StateMachine\Callback\ContainerAwareCallbackFactory;
+use Workup\StateMachine\Callback\GateCallback;
+use Workup\StateMachine\Test\TestCase;
 use SM\Callback\CallbackFactoryInterface;
 use SM\SMException;
 

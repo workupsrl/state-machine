@@ -1,6 +1,6 @@
 <?php
 
-namespace Sebdesign\SM\Commands;
+namespace Workup\StateMachine\Commands;
 
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Helper\TableSeparator;

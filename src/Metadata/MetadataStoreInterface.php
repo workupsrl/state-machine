@@ -1,6 +1,6 @@
 <?php
 
-namespace Sebdesign\SM\Metadata;
+namespace Workup\StateMachine\Metadata;
 
 interface MetadataStoreInterface
 {

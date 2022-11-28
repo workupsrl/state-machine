@@ -1,16 +1,16 @@
 <?php
 
-namespace Sebdesign\SM;
+namespace Workup\StateMachine;
 
 use Illuminate\Foundation\Application as LaravelApplication;
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 use Laravel\Lumen\Application as LumenApplication;
-use Sebdesign\SM\Callback\ContainerAwareCallback;
-use Sebdesign\SM\Callback\ContainerAwareCallbackFactory;
-use Sebdesign\SM\Commands\Debug;
-use Sebdesign\SM\Commands\Visualize;
-use Sebdesign\SM\Event\Dispatcher;
-use Sebdesign\SM\Factory\Factory;
+use Workup\StateMachine\Callback\ContainerAwareCallback;
+use Workup\StateMachine\Callback\ContainerAwareCallbackFactory;
+use Workup\StateMachine\Commands\Debug;
+use Workup\StateMachine\Commands\Visualize;
+use Workup\StateMachine\Event\Dispatcher;
+use Workup\StateMachine\Factory\Factory;
 use SM\Callback\CallbackFactoryInterface;
 use SM\Callback\CascadeTransitionCallback;
 use SM\Factory\FactoryInterface;

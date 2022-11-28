@@ -1,12 +1,12 @@
 <?php
 
-namespace Sebdesign\SM\Test\Event;
+namespace Workup\StateMachine\Test\Event;
 
 use Exception;
 use Illuminate\Support\Facades\Event as EventFacade;
-use Sebdesign\SM\Event\TransitionEvent;
-use Sebdesign\SM\Test\Article;
-use Sebdesign\SM\Test\TestCase;
+use Workup\StateMachine\Event\TransitionEvent;
+use Workup\StateMachine\Test\Article;
+use Workup\StateMachine\Test\TestCase;
 use SM\Event\SMEvents;
 use Symfony\Contracts\EventDispatcher\Event;
 
