@@ -3,7 +3,7 @@
 namespace Workup\StateMachine\Factory;
 
 use Workup\StateMachine\Metadata\MetadataStoreInterface;
-use Workup\StateMachine\StateMachine\StateMachine;
+use Workup\StateMachine\StateMachine;
 use SM\Callback\CallbackFactoryInterface;
 use SM\Factory\Factory as BaseFactory;
 use SM\SMException;

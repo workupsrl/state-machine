@@ -1,6 +1,6 @@
 <?php
 
-namespace Workup\StateMachine\StateMachine;
+namespace Workup\StateMachine;
 
 use Workup\StateMachine\Event\TransitionEvent;
 use Workup\StateMachine\Metadata\MetadataStore;
