@@ -14,13 +14,31 @@ composer require workup/state-machine
 
 ## Configuration
 
-Publish the config file in `config/state-machine.php`.
+There are two ways to configure the state machine:
+
+### Generic config file
+Publish the config file in `config/state-machine.php` (**not needed if using the provided trait in your model**).
 
 ``` bash
 php artisan vendor:publish --provider="Workup\SM\ServiceProvider"
 ```
 
+### Model trait
+Add the `HasStateMachines` trait in yor model and implement the `$stateMachines` array to automatically setup its state machines.
+``` php
+protected static array $stateMachines = [
+    'state' => 'state-machine-config', // passing a string will load the corresponding config
+    'another-state' => [               // inline declaration
+        'states' => ['test'],
+        'transitions' => [],
+    ],
+];
+```
+
+#### Options
 Please see the documentation of the [StateMachineBundle](https://github.com/winzou/StateMachineBundle) for all the available options.
+
+When using the provided trait in your model you don't have to pass the `graph`, `property_name` and `class` parameters. You could additionally pass the `initial_state` parameter (by default the initial state will be the first one found in the states array).
 
 ## Usage
 
