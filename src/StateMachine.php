@@ -2,15 +2,15 @@
 
 namespace Workup\StateMachine;
 
+use SM\SMException;
+use SM\Event\SMEvents;
+use SM\Callback\CallbackFactoryInterface;
 use Workup\StateMachine\Event\TransitionEvent;
 use Workup\StateMachine\Metadata\MetadataStore;
-use Workup\StateMachine\Metadata\MetadataStoreInterface;
-use SM\Callback\CallbackFactoryInterface;
-use SM\Event\SMEvents;
-use SM\SMException;
 use SM\StateMachine\StateMachine as BaseStateMachine;
-use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 use Symfony\Component\PropertyAccess\PropertyAccessor;
+use Workup\StateMachine\Metadata\MetadataStoreInterface;
+use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 
 class StateMachine extends BaseStateMachine
 {
