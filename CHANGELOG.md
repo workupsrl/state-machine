@@ -5,7 +5,39 @@ All Notable changes to `laravel-state-machine` will be documented in this file
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v3.4.0] - 2022-12-22
+
+## [v3.4.4] - 2024-03-12
+
+### Added
+
+-   Laravel 11.x Compatibility ([#71](https://github.com/sebdesign/laravel-state-machine/pull/71))
+
+## [v3.4.3] - 2024-01-30
+
+### Fixed
+
+-   compatibility update of Dispatcher with EventDispatcherInterface from Symfony7 ([#69](https://github.com/sebdesign/laravel-state-machine/pull/69))
+
+## [v3.4.2] - 2023-11-16
+
+### Fixed
+
+-   Handle enum states (Fixes [#68](https://github.com/sebdesign/laravel-state-machine/issues/68))
+
+## [v3.4.1] - 2023-04-18
+
+### Added
+
+-   Don't escape unicode characters ([#66](https://github.com/sebdesign/laravel-state-machine/issues/66))
+
+## [v3.4.0] - 2023-02-01
+
+### Added
+
+-   Add support for Laravel 10 ([#65](https://github.com/sebdesign/laravel-state-machine/issues/65))
+-   Add support for PHP 8.2 ([#65](https://github.com/sebdesign/laravel-state-machine/issues/65))
+
+## [v3.3.0.001] - 2022-02-02
 
 - Add Trait to automatically setup state machines
 
